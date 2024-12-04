@@ -58,7 +58,7 @@ This project is a Java-based text analysis tool designed to preprocess and analy
    - Depending on whether or not the folder or file previously exist, they will be added to the specified locations. 
 
 ## UML Diagram
-![UML Diagram](https://github.com/michaelmuscara/SemesterProject-Milestone2/blob/main/Milestone%202%20UML.jpg)
+![UML Diagram](https://github.com/michaelmuscara/Semester-Project-Milestone-3/blob/main/UML%20Diagram%20Milestone%203.jpg)
 
 The UML diagram illustrates the relationships between the main classes in this project: `Article`, `FrequencySort`, `Main`, `Folder`. Each class is responsible for a specific task in the article preprocessing workflow.
 
