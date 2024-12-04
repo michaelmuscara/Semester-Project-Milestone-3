@@ -62,13 +62,15 @@ This project is a Java-based text analysis tool designed to preprocess and analy
 
 The UML diagram illustrates the relationships between the main classes in this project: `Article`, `FrequencySort`, `Main`, and `Folder`. Each class is responsible for a specific task in the article preprocessing workflow.
 
-## Output Results
-![Output Results](https://github.com/michaelmuscara/SemesterProject-Milestone2/blob/main/output.png)
-
 ## Conclusion
 This project successfully hits the Milestone 3 requirements by:
 - Allowing the end user to interact with the application
 - Providing a text-based user interface
 - Having the ability to analyze articles and compare their overall sentiment
+
+## Reflection
+**Cohesion**: In my code, cohesion plays a significant role in its structure and maintainability. While the program achieves its functionality, there are opportunities for improvement in this area. Some advantages of my code are that the `Article` class is relatively cohesive, as it encapsulates functionalities such as calculating word counts and frequencies and performing sentiment analysis. This can also be seen in the `Folder` class, which is focussed on file and directory management. Both classes have strictly defined responsibilities. One area of code that lacks cohesion is the textualInterface() method in the `Main` class. It handles user input, file operations, and article processing which are all unrelated problems. To improve this code, I can separate these into distinct methods or classes. 
+
+**Coupling**: Some areas of my code that display low coupling are the `Folder`, `Article`, and `FrequencySort` classes as they handle specific responsibilities and are reusable to some extent in other contexts. However, the textualInterface() method has high coupling with file paths and directory structure hardcoded into it. This makes the program inflexible and harder to maintain. Introducing a configuration class or file would allow the program to adapt to different environments more easily. The `Article` class directly interacts with the `FrequencySort` class, creating a tight coupling. Decoupling these by introducing an interface or abstraction for sorting algorithms would enhance flexibility and testability.
 
 For any questions or issues with running the program, please reach out to Michael Muscara.
